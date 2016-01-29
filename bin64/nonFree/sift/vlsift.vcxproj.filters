@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\generic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\imopv_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\sift.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\imopv.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\mathop_sse2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\mathop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\nonFree\sift\vl\random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\nonFree\sift\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08F8FDC1-9267-464F-87C6-71FCF3B0FF31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

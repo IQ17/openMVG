@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/workspace_github/openMVG/src/third_party/flann/CMakeLists.txt
+D:/workspace_github/openMVG/src/third_party/flann/cmake/flann_utils.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindOpenMP.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CMakeParseArguments.cmake

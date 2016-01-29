@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiAuxInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiBranchingObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiChooseVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiColCut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiCut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiCuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiNames.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiPresolve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiRowCut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiRowCutDebugger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiSolverBranch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiAuxInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiBranchingObject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiChooseVariable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiColCut.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiCollections.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiCut.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiCuts.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiPresolve.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiRowCut.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiRowCutDebugger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiSolverBranch.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiSolverInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiSolverParameters.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\config_default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\config_osi_default.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\OsiConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08F8FDC1-9267-464F-87C6-71FCF3B0FF31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{54235314-9969-4C4D-9D6D-58CE5A2A1C7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

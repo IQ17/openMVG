@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>openMVG samples &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../index.html" />
+    <link rel="next" title="openMVG softwares &amp; tools" href="../software/softwares.html" />
+    <link rel="prev" title="sfm" href="../openMVG/sfm/sfm.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../software/softwares.html" title="openMVG softwares &amp; tools"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../openMVG/sfm/sfm.html" title="sfm"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="openmvg-samples">
+<h1>openMVG samples<a class="headerlink" href="#openmvg-samples" title="Permalink to this headline">¶</a></h1>
+<p>openMVG focus on a strong implementation checking of the provided features.
+To do so it provides unit test (that assert code results and helps user to see how the code must be used) but it provides also illustrated samples of the major features.</p>
+<p>The samples can be seen as showcase and tutorials:</p>
+<div class="section" id="imagedata">
+<h2>imageData<a class="headerlink" href="#imagedata" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>some pictures for each of the following examples.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="siftputativematches">
+<h2>siftPutativeMatches<a class="headerlink" href="#siftputativematches" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>extract SIFT features and descriptors,</li>
+<li>match features descriptors,</li>
+<li>display the computed matches.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="image-describer-matches">
+<h2>image_describer_matches<a class="headerlink" href="#image-describer-matches" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>use the Image_describer interface to extract features &amp; descriptors</li>
+<li>match the detected regions</li>
+<li>display detected features &amp; corresponding matches</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-homography">
+<h2>robust_homography<a class="headerlink" href="#robust-homography" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>estimate a robust homography between features matches.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-homography-guided">
+<h2>robust_homography_guided<a class="headerlink" href="#robust-homography-guided" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>estimate a robust homography between features matches,</li>
+<li>extent the putative matches with a guided filter,</li>
+<li>warp the query image over the reference image.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-fundamental">
+<h2>robust_fundamental<a class="headerlink" href="#robust-fundamental" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>estimate a robust fundamental matrix between features matches.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-essential">
+<h2>robust_essential<a class="headerlink" href="#robust-essential" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>estimate a robust essential matrix between features matches,</li>
+<li>compute the 3D structure by triangulation of the corresponding inliers.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-essential-ba">
+<h2>robust_essential_ba<a class="headerlink" href="#robust-essential-ba" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>refine with bundle_adjustment the Structure and Motion of a scene</li>
+<li>for different camera model:<ul>
+<li>Refine <code class="docutils literal"><span class="pre">[X],[f,R|t]</span></code> (individual cameras),</li>
+<li>Refine <code class="docutils literal"><span class="pre">[X],[R|t]</span></code>, shared <code class="docutils literal"><span class="pre">[f]</span></code>,</li>
+<li>Refine <code class="docutils literal"><span class="pre">[X],[R|t]</span></code>, shared brown disto models.</li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="robust-essential-spherical">
+<h2>robust_essential_spherical<a class="headerlink" href="#robust-essential-spherical" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>estimate a robust essential matrix between two spherical panorama</li>
+<li>triangulate remaning inliers.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="kvld-filter">
+<h2>kvld_filter<a class="headerlink" href="#kvld-filter" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>filter putative matches with the K-VLD filter <a class="reference internal" href="../bibliography.html#kvld12" id="id1">[KVLD12]</a>.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="exifparsing">
+<h2>exifParsing<a class="headerlink" href="#exifparsing" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>parse JPEG EXIF metadata</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="sensorwidthdatabase">
+<h2>sensorWidthDatabase<a class="headerlink" href="#sensorwidthdatabase" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>use the camera sensor width database</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="undisto-brown">
+<h2>undisto_Brown<a class="headerlink" href="#undisto-brown" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Show how:</dt>
+<dd><ul class="first last simple">
+<li>undistord a picture according known Brown radial parameters.</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Don&#8217;t hesitate to help to extend the list.</strong></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../openMVG/sfm/sfm.html"
+                        title="previous chapter">sfm</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../software/softwares.html"
+                        title="next chapter">openMVG softwares &amp; tools</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/openMVG_Samples/openMVG_Samples.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../software/softwares.html" title="openMVG softwares &amp; tools"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../openMVG/sfm/sfm.html" title="sfm"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>

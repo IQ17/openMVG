@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cereal>
+	<sfm_data_version>0.2</sfm_data_version>
+	<root_path>./</root_path>
+	<views size="dynamic">
+		<value0>
+			<key>0</key>
+			<value>
+				<ptr_wrapper>
+					<id>2147483649</id>
+					<data>
+						<local_path>dataset\</local_path>
+						<filename>0.jpg</filename>
+						<width>1000</width>
+						<height>1000</height>
+						<id_view>0</id_view>
+						<id_intrinsic>0</id_intrinsic>
+						<id_pose>0</id_pose>
+					</data>
+				</ptr_wrapper>
+			</value>
+		</value0>
+		<value1>
+			<key>1</key>
+			<value>
+				<ptr_wrapper>
+					<id>2147483650</id>
+					<data>
+						<local_path>dataset\</local_path>
+						<filename>1.jpg</filename>
+						<width>1000</width>
+						<height>1000</height>
+						<id_view>1</id_view>
+						<id_intrinsic>0</id_intrinsic>
+						<id_pose>1</id_pose>
+					</data>
+				</ptr_wrapper>
+			</value>
+		</value1>
+	</views>
+	<intrinsics size="dynamic">
+		<value0>
+			<key>0</key>
+			<value>
+				<polymorphic_id>2147483649</polymorphic_id>
+				<polymorphic_name>pinhole</polymorphic_name>
+				<ptr_wrapper>
+					<id>2147483651</id>
+					<data>
+						<width>0</width>
+						<height>0</height>
+						<focal_length>0</focal_length>
+						<principal_point size="dynamic">
+							<value0>0</value0>
+							<value1>0</value1>
+						</principal_point>
+					</data>
+				</ptr_wrapper>
+			</value>
+		</value0>
+	</intrinsics>
+	<extrinsics size="dynamic">
+		<value0>
+			<key>0</key>
+			<value>
+				<rotation size="dynamic">
+					<value0 size="dynamic">
+						<value0>1</value0>
+						<value1>0</value1>
+						<value2>0</value2>
+					</value0>
+					<value1 size="dynamic">
+						<value0>0</value0>
+						<value1>1</value1>
+						<value2>0</value2>
+					</value1>
+					<value2 size="dynamic">
+						<value0>0</value0>
+						<value1>0</value1>
+						<value2>1</value2>
+					</value2>
+				</rotation>
+				<center size="dynamic">
+					<value0>0</value0>
+					<value1>0</value1>
+					<value2>0</value2>
+				</center>
+			</value>
+		</value0>
+		<value1>
+			<key>1</key>
+			<value>
+				<rotation size="dynamic">
+					<value0 size="dynamic">
+						<value0>1</value0>
+						<value1>0</value1>
+						<value2>0</value2>
+					</value0>
+					<value1 size="dynamic">
+						<value0>0</value0>
+						<value1>1</value1>
+						<value2>0</value2>
+					</value1>
+					<value2 size="dynamic">
+						<value0>0</value0>
+						<value1>0</value1>
+						<value2>1</value2>
+					</value2>
+				</rotation>
+				<center size="dynamic">
+					<value0>0</value0>
+					<value1>0</value1>
+					<value2>0</value2>
+				</center>
+			</value>
+		</value1>
+	</extrinsics>
+	<structure size="dynamic">
+		<value0>
+			<key>0</key>
+			<value>
+				<X size="dynamic">
+					<value0>11</value0>
+					<value1>22</value1>
+					<value2>33</value2>
+				</X>
+				<observations size="dynamic">
+					<value0>
+						<key>0</key>
+						<value>
+							<id_feat>0</id_feat>
+							<x size="dynamic">
+								<value0>10</value0>
+								<value1>20</value1>
+							</x>
+						</value>
+					</value0>
+					<value1>
+						<key>1</key>
+						<value>
+							<id_feat>1</id_feat>
+							<x size="dynamic">
+								<value0>30</value0>
+								<value1>10</value1>
+							</x>
+						</value>
+					</value1>
+				</observations>
+			</value>
+		</value0>
+	</structure>
+	<control_points size="dynamic"/>
+</cereal>
+

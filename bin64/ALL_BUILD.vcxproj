@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Maintainer|x64">
+      <Configuration>Maintainer</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{128A3425-3E30-4566-B369-D266E4C9106F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_github/openMVG/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_github/openMVG/src/CMakeLists.txt;D:\workspace_github\openMVG\src\CMakeLists.txt;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCCompiler.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\OptimizeForArchitecture.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\AddCompilerFlag.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCSourceCompiles.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckIncludeFile.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CXX11.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenMP.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindMosek.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindEigen.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindFlann.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindCoinUtils.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindClp.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindOsi.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindLemon.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindSphinx.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\docs\sphinx\rst\conf.py;D:\workspace_github\openMVG\src\cmakeFindModules\OpenMVGConfig.cmake.in;D:\workspace_github\openMVG\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_github/openMVG/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_github/openMVG/src/CMakeLists.txt;D:\workspace_github\openMVG\src\CMakeLists.txt;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCCompiler.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\OptimizeForArchitecture.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\AddCompilerFlag.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCSourceCompiles.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckIncludeFile.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CXX11.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenMP.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindMosek.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindEigen.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindFlann.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindCoinUtils.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindClp.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindOsi.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindLemon.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindSphinx.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\docs\sphinx\rst\conf.py;D:\workspace_github\openMVG\src\cmakeFindModules\OpenMVGConfig.cmake.in;D:\workspace_github\openMVG\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_github/openMVG/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_github/openMVG/src/CMakeLists.txt;D:\workspace_github\openMVG\src\CMakeLists.txt;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCCompiler.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\OptimizeForArchitecture.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\AddCompilerFlag.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCSourceCompiles.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckIncludeFile.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CXX11.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenMP.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindMosek.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindEigen.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindFlann.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindCoinUtils.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindClp.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindOsi.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindLemon.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindSphinx.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\docs\sphinx\rst\conf.py;D:\workspace_github\openMVG\src\cmakeFindModules\OpenMVGConfig.cmake.in;D:\workspace_github\openMVG\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_github/openMVG/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_github/openMVG/src/CMakeLists.txt;D:\workspace_github\openMVG\src\CMakeLists.txt;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCCompiler.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\OptimizeForArchitecture.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\AddCompilerFlag.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCSourceCompiles.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckIncludeFile.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CXX11.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenMP.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindMosek.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindEigen.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindFlann.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindCoinUtils.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindClp.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindOsi.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindLemon.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindSphinx.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\docs\sphinx\rst\conf.py;D:\workspace_github\openMVG\src\cmakeFindModules\OpenMVGConfig.cmake.in;D:\workspace_github\openMVG\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">Building Custom Rule D:/workspace_github/openMVG/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:/workspace_github/openMVG/src/CMakeLists.txt;D:\workspace_github\openMVG\src\CMakeLists.txt;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCCompiler.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;D:\workspace_github\openMVG\bin64\CMakeFiles\3.3.0\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeCommonLanguageInclude.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\OptimizeForArchitecture.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\AddCompilerFlag.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCSourceCompiles.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CheckCXXCompilerFlag.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CheckIncludeFile.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\CXX11.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindOpenMP.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindJPEG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPNG.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindZLIB.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindTIFF.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindMosek.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindEigen.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindFlann.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindCoinUtils.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindClp.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindOsi.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindLemon.cmake;D:\workspace_github\openMVG\src\cmakeFindModules\FindSphinx.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.3\Modules\CMakeParseArguments.cmake;D:\workspace_github\openMVG\docs\sphinx\rst\conf.py;D:\workspace_github\openMVG\src\cmakeFindModules\OpenMVGConfig.cmake.in;D:\workspace_github\openMVG\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:\workspace_github\openMVG\bin64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/CppUnitLite/CppUnitLite.vcxproj">
+      <Project>DB507E98-DBD6-4A2D-91AF-641903D638B4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/ZERO_CHECK.vcxproj">
+      <Project>44816857-DDBA-48FC-8D82-3539F4841569</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/ceres-solver/internal/ceres/ceres.vcxproj">
+      <Project>321A5D78-070D-4027-9F48-7F6043DF511F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/cxsparse/cxsparse.vcxproj">
+      <Project>69E4840E-4BB2-42EF-B15E-E4A76F609E3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/doc.vcxproj">
+      <Project>49B4408B-9FA9-45E6-9B2F-DA8126C9168B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/easyexif/easyexif.vcxproj">
+      <Project>2B7ABEED-C170-4169-AFF1-8F99CD3AEF8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/flann/src/cpp/flann_cpp_s.vcxproj">
+      <Project>34322EDE-443D-43C0-B272-79F91A9CB48A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/jpeg/jpeg.vcxproj">
+      <Project>3E57E67B-913C-4B01-A60E-36525B0E8B34</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/lemon/lemon/lemon.vcxproj">
+      <Project>29E61225-8A41-4812-B77A-035CAA0C85AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/CoinUtils/src/lib_CoinUtils.vcxproj">
+      <Project>3F1276B6-FDE7-4562-A7C4-A3C1EB0B7625</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Osi/src/Osi/lib_Osi.vcxproj">
+      <Project>E4C1E0E7-41A2-440D-8F81-0E973873B8B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Clp/src/OsiClp/lib_OsiClpSolver.vcxproj">
+      <Project>88F722BB-ABD8-480E-A0D1-837E9B650433</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Clp/src/lib_clp.vcxproj">
+      <Project>1306D7DD-1AFE-4A1D-8FCA-F588265B2108</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/vectorGraphics/main_svgSample.vcxproj">
+      <Project>3E25010B-8983-4908-94BF-0119D6D75759</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/features/openMVG_features.vcxproj">
+      <Project>B160A030-0203-47A2-B262-0259B3EC8C00</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/graph/openMVG_graph_test_connectedComponent.vcxproj">
+      <Project>BF921307-3677-45DD-A7F4-913539438BDD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/graph/openMVG_graph_test_triplet_finder.vcxproj">
+      <Project>15993F80-55E8-47F0-9C67-6F4EA2F55CBB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_image.vcxproj">
+      <Project>31DD1A08-695B-4E27-81E6-D63EC8DC5B7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/kvld/openMVG_kvld.vcxproj">
+      <Project>2B573C36-7043-4934-8AF2-8A45AAA3CBEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_global_translations_fromTij.vcxproj">
+      <Project>A70C8190-5008-43ED-AB2C-871FDA89D28D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_global_translations_fromTriplets.vcxproj">
+      <Project>D98A74A3-4CB5-489B-8765-10B987431B68</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_resection.vcxproj">
+      <Project>9776E344-BF3E-4A8F-96BF-A0E3DA7DFDDE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_resection_robust.vcxproj">
+      <Project>C74D33B9-1D7B-4D10-9BE3-9CE1AD111CF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_tijsAndXis.vcxproj">
+      <Project>7D8912EB-4D98-4777-BDCB-F4E4274322B3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_tijsAndXis_outlier.vcxproj">
+      <Project>9C836871-462E-4ACE-A217-9310FA0A65D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyCV_test_triangulation.vcxproj">
+      <Project>F32E8075-B60A-449F-A016-E896306DFC68</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyComputerVision.vcxproj">
+      <Project>99A19961-B0BA-41E8-AA56-2F7152FFF2F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/openMVG_linearProgramming_test_linearProgramming.vcxproj">
+      <Project>F04F3BC6-E088-420E-8944-BCEBDBBFB3B0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/colorHarmonize/openMVG_main_ColHarmonize.vcxproj">
+      <Project>BB4030E3-516C-4931-9DD9-D5BFE128AE9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ComputeFeatures.vcxproj">
+      <Project>C014D616-3CD1-46DD-B7E5-3510FF13A0E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ComputeMatches.vcxproj">
+      <Project>5C9E32BF-2925-4B70-B1E5-360DC397AA3E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ComputeSfM_DataColor.vcxproj">
+      <Project>A6B67A6C-BC11-49E9-B19D-E3BA9F912708</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ComputeStructureFromKnownPoses.vcxproj">
+      <Project>6F443194-8282-4351-B538-201984375A56</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ConvertList.vcxproj">
+      <Project>338821C4-1E75-41AA-A3C4-B265537C016E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ConvertSfM_DataFormat.vcxproj">
+      <Project>1EF2C430-5BEB-489E-9209-0EA1C3A479E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ExportCameraFrustums.vcxproj">
+      <Project>83C907DE-F3BC-4B1F-AB45-0C62BC0763AA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_ExportUndistortedImages.vcxproj">
+      <Project>CE87BA38-E79A-416E-9053-9042EAD577FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_FrustumFiltering.vcxproj">
+      <Project>EBE10974-FF0E-40EC-A0E9-787275A54751</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_GlobalSfM.vcxproj">
+      <Project>5CEDF1A2-62F8-4974-A29A-AE6B49D41113</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_IncrementalSfM.vcxproj">
+      <Project>FCB85A9A-F3ED-4A03-8CE2-2AC61E0C9777</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/sensorWidthDatabase/openMVG_main_ParseDatabase.vcxproj">
+      <Project>84A50F57-5E16-4697-A260-421F88EC0E0A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_SfMInit_ImageListing.vcxproj">
+      <Project>D208FA18-2F74-4DEA-BC14-81814188C697</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/Localization/openMVG_main_SfM_Localization.vcxproj">
+      <Project>1D62B0C7-E57A-41D7-8DB1-CEE49085E24A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_evalQuality.vcxproj">
+      <Project>758BA2DC-BEDF-471B-8458-03F416FA3A3A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/exifParsing/openMVG_main_exifParsing.vcxproj">
+      <Project>233B6289-E782-48FE-A985-9BB0DCE3FCAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_exportKeypoints.vcxproj">
+      <Project>76CA2788-5B52-4C41-B472-CEB1ACCA104A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_exportMatches.vcxproj">
+      <Project>50A1A23E-DA3F-44BE-918D-89359538FB41</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_exportTracks.vcxproj">
+      <Project>45778FC5-0FDC-4CF5-8827-92C427AD1E4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_openMVG2CMPMVS.vcxproj">
+      <Project>567CA0F0-C156-4AF5-AC8F-547E4ED2DE3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_openMVG2MESHLAB.vcxproj">
+      <Project>916C4BA2-859E-4756-9098-5742F63448B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_openMVG2MVE2.vcxproj">
+      <Project>CF5C0884-F76A-41FB-A868-F27842A02066</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_openMVG2MVSTEXTURING.vcxproj">
+      <Project>730B2AB1-8315-4B36-912E-773FEBC3BAA8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/software/SfM/openMVG_main_openMVG2PMVS.vcxproj">
+      <Project>C96731E6-B1C9-4179-A508-9021C35D5D6A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_matching.vcxproj">
+      <Project>8EBE2446-43F9-44F8-9B7B-68641571D6DC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching_image_collection/openMVG_matching_image_collection.vcxproj">
+      <Project>09B7EF9F-4B90-493A-B724-BF1846E730F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_multiview.vcxproj">
+      <Project>061E9705-7D35-4C26-990A-44620F163384</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_multiview_test_data.vcxproj">
+      <Project>478CD6BB-C50D-430B-9C86-75C0FFBD3195</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/numeric/openMVG_numeric.vcxproj">
+      <Project>9C96B67D-4C51-42C6-BD16-ACD33480DDAA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/image_describer_matches/openMVG_sample_describe_and_match.vcxproj">
+      <Project>5E8F3130-1CF5-4CBC-9162-49A30B24FBF5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/kvld_filter/openMVG_sample_kvld.vcxproj">
+      <Project>821D5F6D-24B8-4AE8-8302-757F2A68FE9E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/features_repeatability/openMVG_sample_main_repeatability_dataset.vcxproj">
+      <Project>31ED3378-8C3E-485B-9188-7F86AF97D5F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_essential/openMVG_sample_robustEssential.vcxproj">
+      <Project>8B31A7F4-C099-41B9-A556-E7E500835203</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_essential_ba/openMVG_sample_robustEssential_ba.vcxproj">
+      <Project>0D8B8F97-5788-4C88-88FA-47DEB3B37727</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_essential_spherical/openMVG_sample_robustEssential_spherical.vcxproj">
+      <Project>8DD82920-21F6-4986-AFF5-F73050A06107</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_fundamental/openMVG_sample_robustFundamental.vcxproj">
+      <Project>3247DFF4-F2A0-4DC9-9D74-A30E991131E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_fundamental_guided/openMVG_sample_robustFundamental_guided.vcxproj">
+      <Project>3423A1B2-F92C-4A3C-B95A-B0CC9351ADFB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_homography/openMVG_sample_robustHomography.vcxproj">
+      <Project>371443FE-37D6-4F2F-B7E7-7E6925068FD8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/robust_homography_guided/openMVG_sample_robustHomography_guided.vcxproj">
+      <Project>4350E9CC-0994-4F38-B616-AF8F72733B5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/siftPutativeMatches/openMVG_sample_siftPutative.vcxproj">
+      <Project>EC03444A-EF8E-4C70-92FE-0AF52AF61EB2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG_Samples/undisto_Brown/openMVG_sample_undistoBrown.vcxproj">
+      <Project>20BE77E9-302B-423C-92F6-834C3DA6C307</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/openMVG_sfm.vcxproj">
+      <Project>D45431BE-3882-4B06-8718-B6C7FCE43350</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/system/openMVG_system.vcxproj">
+      <Project>E7ECC80E-599C-4E5B-9247-8FA261C90332</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/cameras/openMVG_test_Camera_IO.vcxproj">
+      <Project>2D9DFE9A-8B61-4D71-B9F1-94913E378A4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/cameras/openMVG_test_Camera_Pinhole_Brown.vcxproj">
+      <Project>07040AB4-4C34-4441-A350-BFD0568065D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/cameras/openMVG_test_Camera_Pinhole_Radial.vcxproj">
+      <Project>9DB257EA-79CF-4002-9391-CF65A96FCB23</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching_image_collection/openMVG_test_Pair_Builder.vcxproj">
+      <Project>24777588-2760-4B69-AB20-B32F3BA70B01</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/exif/sensor_width_database/openMVG_test_ParseDatabase.vcxproj">
+      <Project>26513E66-AA6C-4887-A94D-880AD11A9F9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/stl/openMVG_test_dynamic_bitset.vcxproj">
+      <Project>AAE5A0D2-5A5D-4026-BA42-388DBA39209D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/exif/openMVG_test_exif_IO.vcxproj">
+      <Project>43579CF7-3EDF-4BDE-BAA9-CF3063B12417</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/features/openMVG_test_features.vcxproj">
+      <Project>A112C148-7DEF-44BF-A984-31E8388511D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/geometry/openMVG_test_frustum_intersection.vcxproj">
+      <Project>98CB579F-BF39-4A76-8F73-6E3CA882DCFF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/pipelines/global/openMVG_test_global_SfM.vcxproj">
+      <Project>5D176DFD-A7A6-47DF-8F3F-C588942C85EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/color_harmonization/openMVG_test_global_quantile_gain_offset_alignment.vcxproj">
+      <Project>C063736C-9A00-4ABF-8956-5D7F15D0B76C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/geometry/openMVG_test_half_space_intersection.vcxproj">
+      <Project>834D3C81-D990-4DBF-876B-166033B1B88B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_test_image.vcxproj">
+      <Project>9726A750-4617-48D0-9567-DE92ACF0C41D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_test_image_drawing.vcxproj">
+      <Project>684ACDB8-108C-4CDD-A469-33DB2C7DEA39</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_test_image_filtering.vcxproj">
+      <Project>D3126EA4-35A2-4D45-BC8F-48D463735967</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_test_image_io.vcxproj">
+      <Project>4AF5C57C-3C72-414D-9974-F069EF674FE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_test_image_resampling.vcxproj">
+      <Project>92B63B9F-06AD-4ECB-920E-D6D2D869C4A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_test_indMatch.vcxproj">
+      <Project>2971CB68-63B8-4F13-ADE8-6B7F984EB04C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/numeric/openMVG_test_lm.vcxproj">
+      <Project>1B6321B3-8266-4A90-BDCE-BDCC1128BC8D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_test_matching.vcxproj">
+      <Project>A5DFEDA6-29D5-48AC-9F63-425CE228D99C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_test_matching_filters.vcxproj">
+      <Project>6F3A8E0A-3749-4E6E-BCAC-A554C43ADB52</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_test_metric.vcxproj">
+      <Project>CB1C0F5D-AA1B-4140-AF71-1DDF7DDA27E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/numeric/openMVG_test_numeric.vcxproj">
+      <Project>60B412E5-C125-4701-B797-FB9294D29FC1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/numeric/openMVG_test_poly.vcxproj">
+      <Project>1CEE309C-F3EA-49EC-8607-EAEC56C4FC87</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/robust_estimation/openMVG_test_rand_sampling.vcxproj">
+      <Project>9BA37010-912A-4A7D-8C62-99C233C9E1E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/geometry/openMVG_test_rigid_transformation3D_srt.vcxproj">
+      <Project>4EDC510D-A9A0-4C3D-BCA9-8D3DB5631AB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/robust_estimation/openMVG_test_robust_estimator_ACRansac.vcxproj">
+      <Project>8F6E8EFE-09F6-4D34-9CAD-1C12C2A8CD61</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/robust_estimation/openMVG_test_robust_estimator_MaxConsensus.vcxproj">
+      <Project>D91AE945-47CC-4C54-AE77-AD1044C81061</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/robust_estimation/openMVG_test_robust_estimator_Ransac.vcxproj">
+      <Project>3006FDEB-33A8-4A70-8C48-D919B99F6C28</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/robust_estimation/openMVG_test_robust_estimator_lineKernel.vcxproj">
+      <Project>C06383C5-CAC1-4DF7-BDB4-B565D9D3392A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_rotation_averaging.vcxproj">
+      <Project>2A0CDB70-D312-43BB-AFB8-AE2BD4C12E4C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/pipelines/sequential/openMVG_test_sequential_SfM.vcxproj">
+      <Project>201A33CD-7385-470C-9BB1-B21C90119EF4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/openMVG_test_sfm_data_BA.vcxproj">
+      <Project>2897A40E-BD2D-487A-8AA1-DE0BDF932E9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/openMVG_test_sfm_data_io.vcxproj">
+      <Project>713D324A-ADEB-4123-97DA-92E128284559</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/openMVG_test_sfm_data_utils.vcxproj">
+      <Project>22AE153C-574C-47F4-87D9-EB9D175EADC5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_affine.vcxproj">
+      <Project>8AC48E77-585E-46F2-83ED-0CB1F30C3955</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_essential_five_point.vcxproj">
+      <Project>0E9F0010-8A58-4809-A8EA-9CDFCED586BA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_essential_kernel.vcxproj">
+      <Project>0065BC98-C881-4A3E-8934-D6D298FE39AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_fundamental_kernel.vcxproj">
+      <Project>BEB0B4FA-B5F9-4CC8-8A90-2A5059EDD317</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_homography_kernel.vcxproj">
+      <Project>FAA1D2D0-7D64-4ABD-9EFE-E208E3266C28</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_resection_kernel.vcxproj">
+      <Project>E6D567F7-6EEE-4255-94F7-C587F1244697</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_solver_translation_knownRotation_kernel.vcxproj">
+      <Project>414CBF6F-F158-46D2-AE65-5A875B27F28B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/stl/openMVG_test_split.vcxproj">
+      <Project>A2CCC6FE-9E70-4B77-9C68-17CF4F1FBE6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/tracks/openMVG_test_tracks.vcxproj">
+      <Project>61FC1B7E-3F9D-4535-A8EA-E49446731889</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_translation_averaging.vcxproj">
+      <Project>358F5C92-3C9C-47D4-844A-71888689FE57</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_triangulation.vcxproj">
+      <Project>8288CA2F-4A9E-434E-857C-E46C900A57AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_test_triangulation_nview.vcxproj">
+      <Project>F2FA3C1F-CB62-4218-9A5B-AA1E4B8A538B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/png/png.vcxproj">
+      <Project>A49B49FE-6F3E-4DEF-8BDF-68C5ED8FCB93</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/stlplus3/stlplus.vcxproj">
+      <Project>BBB4C50E-2B36-4C0F-9487-D65EAD297DC1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/tiff/tiff.vcxproj">
+      <Project>D7829761-3E88-400F-A472-57E24EA63553</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/nonFree/sift/vlsift.vcxproj">
+      <Project>BEBF4461-EBA5-47EA-BA3B-018C6FD369FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/zlib/zlib.vcxproj">
+      <Project>66EC2C3E-C47D-4A90-B398-AC238D28C9A6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

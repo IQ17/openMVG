@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+D:/workspace_github/openMVG/src/third_party/ceres-solver/CMakeLists.txt
+D:/workspace_github/openMVG/src/cmakeFindModules/UpdateCacheVariable.cmake
+D:/workspace_github/openMVG/src/cmakeFindModules/FindEigen.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindOpenMP.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CheckCXXSourceCompiles.cmake
+D:/workspace_github/openMVG/src/third_party/ceres-solver/cmake/FindSharedPtr.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CheckCXXSourceCompiles.cmake
+D:/workspace_github/openMVG/src/third_party/ceres-solver/cmake/CreateCeresConfig.cmake
+D:/workspace_github/openMVG/src/third_party/ceres-solver/cmake/config.h.in

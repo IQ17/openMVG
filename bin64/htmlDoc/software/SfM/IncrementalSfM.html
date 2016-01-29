@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>openMVG_main_IncrementalSfM &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../../index.html" />
+    <link rel="up" title="SfM: Structure from Motion" href="SfM.html" />
+    <link rel="next" title="openMVG_main_GlobalSfM" href="GlobalSfM.html" />
+    <link rel="prev" title="openMVG_main_GlobalSfM" href="GlobalSfM.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="GlobalSfM.html" title="openMVG_main_GlobalSfM"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="GlobalSfM.html" title="openMVG_main_GlobalSfM"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../softwares.html" >openMVG softwares &amp; tools</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="SfM.html" accesskey="U">SfM: Structure from Motion</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="openmvg-main-incrementalsfm">
+<h1>openMVG_main_IncrementalSfM<a class="headerlink" href="#openmvg-main-incrementalsfm" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="../../bibliography.html#acsfm" id="id1">[ACSfM]</a> SfM is an evolution of the implementation used for the paper &#8220;Adaptive Structure from Motion with a contrario model estimation&#8221;  published at ACCV 2012.</p>
+<p>The incremental pipeline is a growing reconstruction process.
+It starts from an initial two-view reconstruction (the seed) that is iteratively extended by adding new views and 3D points, using pose estimation and triangulation.
+Due to the incremental nature of the process, successive steps of non-linear refinement, like Bundle Adjustment (BA) and Levenberg-Marquardt steps, are performed to minimize the accumulated error (drift).</p>
+<p>Algorithm of the Incremental/Sequential Structure from Motion</p>
+<div class="highlight-c++"><div class="highlight"><pre><span class="nl">Require</span><span class="p">:</span> <span class="n">internal</span> <span class="n">camera</span> <span class="n">calibration</span> <span class="p">(</span><span class="n">possibly</span> <span class="n">from</span> <span class="n">EXIF</span> <span class="n">data</span><span class="p">)</span>
+<span class="nl">Require</span><span class="p">:</span> <span class="n">pairwise</span> <span class="n">geometry</span> <span class="n">consistent</span> <span class="n">point</span> <span class="n">correspondences</span>
+<span class="nl">Ensure</span><span class="p">:</span> <span class="mi">3</span><span class="n">D</span> <span class="n">point</span> <span class="n">cloud</span>
+<span class="nl">Ensure</span><span class="p">:</span> <span class="n">camera</span> <span class="n">poses</span>
+<span class="n">compute</span> <span class="n">correspondence</span> <span class="n">tracks</span> <span class="n">t</span>
+<span class="n">compute</span> <span class="n">connectivity</span> <span class="n">graph</span> <span class="n">G</span> <span class="p">(</span><span class="mi">1</span> <span class="n">node</span> <span class="n">per</span> <span class="n">view</span><span class="p">,</span> <span class="mi">1</span> <span class="n">edge</span> <span class="n">when</span> <span class="n">enough</span> <span class="n">matches</span><span class="p">)</span>
+<span class="n">pick</span> <span class="n">an</span> <span class="n">edge</span> <span class="n">e</span> <span class="n">in</span> <span class="n">G</span> <span class="n">with</span> <span class="n">sufficient</span> <span class="n">baseline</span>
+<span class="o">*</span> <span class="n">robustly</span> <span class="n">estimate</span> <span class="n">essential</span> <span class="n">matrix</span> <span class="n">from</span> <span class="n">images</span> <span class="n">of</span> <span class="n">e</span>
+<span class="n">triangulate</span> <span class="n">validated</span> <span class="n">tracks</span><span class="p">,</span> <span class="n">which</span> <span class="n">provides</span> <span class="n">an</span> <span class="n">initial</span> <span class="n">reconstruction</span>
+<span class="n">contract</span> <span class="n">edge</span> <span class="n">e</span>
+<span class="k">while</span> <span class="n">G</span> <span class="n">contains</span> <span class="n">an</span> <span class="n">edge</span> <span class="k">do</span>
+  <span class="n">pick</span> <span class="n">edge</span> <span class="n">e</span> <span class="n">in</span> <span class="n">G</span> <span class="n">that</span> <span class="n">maximizes</span> <span class="k">union</span><span class="p">(</span><span class="n">track</span><span class="p">(</span><span class="n">e</span><span class="p">),</span><span class="mi">3</span><span class="n">D</span> <span class="n">points</span><span class="p">)</span>
+  <span class="o">*</span> <span class="n">robustly</span> <span class="n">estimate</span> <span class="n">pose</span> <span class="p">(</span><span class="n">external</span> <span class="n">orientation</span><span class="o">/</span><span class="n">resection</span><span class="p">)</span>
+  <span class="n">triangulate</span> <span class="k">new</span> <span class="n">tracks</span>
+  <span class="n">contract</span> <span class="n">edge</span> <span class="n">e</span>
+  <span class="n">perform</span> <span class="n">bundle</span> <span class="n">adjustment</span>
+<span class="n">end</span> <span class="k">while</span>
+</pre></div>
+</div>
+<div class="section" id="information-and-usage">
+<h2>Information and usage<a class="headerlink" href="#information-and-usage" title="Permalink to this headline">¶</a></h2>
+<p>The chain is designed to run on a sfm_data.json file and some pre-computed matches.</p>
+<blockquote>
+<div><div class="highlight-c++"><div class="highlight"><pre>$ openMVG_main_IncrementalSfM -i Dataset/matches/sfm_data.json -m Dataset/matches/ -o Dataset/out_Incremental_Reconstruction/
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="docutils">
+<dt>openMVG_main_IncrementalSfM displays to you some initial pairs that share an important number of common point.</dt>
+<dd><strong>Please select two image index that are convergent and the 3D reconstruction will start.
+The initial pair must be choosen with numerous correspondences while keeping a wide enough baseline.</strong></dd>
+</dl>
+<p>Arguments description:</p>
+<p><strong>Required parameters:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>[-i|&#8211;input_file]</strong><ul>
+<li>a SfM_Data file</li>
+</ul>
+</li>
+<li><strong>[-m|&#8211;matchdir]</strong><ul>
+<li>path were geometric matches were stored</li>
+</ul>
+</li>
+<li><strong>[-o|&#8211;outdir]</strong><ul>
+<li>path where the output data will be stored</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional parameters:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>[-a|&#8211;initialPairA NAME]</strong><ul>
+<li>the filename image to use (i.e. 100_7001.JPG)</li>
+</ul>
+</li>
+<li><strong>[-b|&#8211;initialPairB NAME]</strong><ul>
+<li>the filename image to use (i.e. 100_7002.JPG)</li>
+</ul>
+</li>
+<li><strong>[-c|&#8211;camera_model]</strong><ul>
+<li>The camera model type that will be used for views with unknown intrinsic:<ul>
+<li>1: Pinhole</li>
+<li>2: Pinhole radial 1</li>
+<li>3: Pinhole radial 3 (default)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>[-f|&#8211;refineIntrinsics]</strong><ul>
+<li>0: intrinsic parameters are kept as constant</li>
+<li>1: refine intrinsic parameters (default)</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="GlobalSfM.html"
+                        title="previous chapter">openMVG_main_GlobalSfM</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="GlobalSfM.html"
+                        title="next chapter">openMVG_main_GlobalSfM</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/software/SfM/IncrementalSfM.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="GlobalSfM.html" title="openMVG_main_GlobalSfM"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="GlobalSfM.html" title="openMVG_main_GlobalSfM"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../softwares.html" >openMVG softwares &amp; tools</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="SfM.html" >SfM: Structure from Motion</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>

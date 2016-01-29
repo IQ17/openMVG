@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+D:/workspace_github/openMVG/src/third_party/jpeg/CMakeLists.txt
+C:/Program Files (x86)/CMake/share/cmake-3.3/Modules/CheckIncludeFile.cmake
+D:/workspace_github/openMVG/src/third_party/jpeg/jconfig.h.cmake

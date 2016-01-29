@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Cascade_Hashing_Matcher_Regions_AllInMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Matcher_Regions_AllInMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Cascade_Hashing_Matcher_Regions_AllInMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\E_ACRobust.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\F_ACRobust.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\GeometricFilter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Geometric_Filter_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\H_ACRobust.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Matcher.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Matcher_Regions_AllInMemory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\Pair_Builder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\openMVG\matching_image_collection\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08F8FDC1-9267-464F-87C6-71FCF3B0FF31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{54235314-9969-4C4D-9D6D-58CE5A2A1C7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

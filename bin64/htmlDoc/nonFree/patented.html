@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>patented &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../index.html" />
+    <link rel="next" title="dependencies" href="../dependencies/external_libs.html" />
+    <link rel="prev" title="Color Harmonization" href="../software/colorHarmonization/color.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../dependencies/external_libs.html" title="dependencies"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../software/colorHarmonization/color.html" title="Color Harmonization"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="patented">
+<h1>patented<a class="headerlink" href="#patented" title="Permalink to this headline">¶</a></h1>
+<p>The openMVG licence is MPL2 but some code used to provide interesting functionnalities have different licences or are subject to patent.</p>
+<p>Such code takes place in the patented directory.</p>
+<div class="section" id="sift">
+<h2>SIFT<a class="headerlink" href="#sift" title="Permalink to this headline">¶</a></h2>
+<p>In order to compute corresponding points between images pairs, openMVG uses natively SIFT keypoints and their associated descriptors.
+The used code is a subset of the <a class="reference internal" href="../bibliography.html#vlfeat" id="id1">[VLFEAT]</a> library.</p>
+<p>You can replace this keypoints and descriptors provided by any version of your choice to use openMVG in a non-research context.
+Suggestions for features points:</p>
+<blockquote>
+<div><ul class="simple">
+<li>CORNERS: HARRIS, FAST,</li>
+<li>REGIONS: MSER,</li>
+<li>BLOBS: AKAZE.</li>
+</ul>
+</div></blockquote>
+<dl class="docutils">
+<dt>Descriptors:</dt>
+<dd><ul class="first last simple">
+<li>BINARY: M-LDB (see AKAZE paper), BRIEF, Nested shape descriptor,</li>
+<li>FLOATING POINT: DAISY, LIOP descriptors.</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../software/colorHarmonization/color.html"
+                        title="previous chapter">Color Harmonization</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../dependencies/external_libs.html"
+                        title="next chapter">dependencies</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/nonFree/patented.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../dependencies/external_libs.html" title="dependencies"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../software/colorHarmonization/color.html" title="Color Harmonization"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>

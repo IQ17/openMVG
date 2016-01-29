@@ -1,0 +1,152 @@
+{
+    "sfm_data_version": "0.2",
+    "root_path": "./",
+    "views": [
+        {
+            "key": 0,
+            "value": {
+                "ptr_wrapper": {
+                    "id": 2147483649,
+                    "data": {
+                        "local_path": "dataset\\",
+                        "filename": "0.jpg",
+                        "width": 1000,
+                        "height": 1000,
+                        "id_view": 0,
+                        "id_intrinsic": 0,
+                        "id_pose": 0
+                    }
+                }
+            }
+        },
+        {
+            "key": 1,
+            "value": {
+                "ptr_wrapper": {
+                    "id": 2147483650,
+                    "data": {
+                        "local_path": "dataset\\",
+                        "filename": "1.jpg",
+                        "width": 1000,
+                        "height": 1000,
+                        "id_view": 1,
+                        "id_intrinsic": 0,
+                        "id_pose": 1
+                    }
+                }
+            }
+        }
+    ],
+    "intrinsics": [
+        {
+            "key": 0,
+            "value": {
+                "polymorphic_id": 2147483649,
+                "polymorphic_name": "pinhole",
+                "ptr_wrapper": {
+                    "id": 2147483651,
+                    "data": {
+                        "width": 0,
+                        "height": 0,
+                        "focal_length": 0,
+                        "principal_point": [
+                            0,
+                            0
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "extrinsics": [
+        {
+            "key": 0,
+            "value": {
+                "rotation": [
+                    [
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1
+                    ]
+                ],
+                "center": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "key": 1,
+            "value": {
+                "rotation": [
+                    [
+                        1,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        0,
+                        0,
+                        1
+                    ]
+                ],
+                "center": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        }
+    ],
+    "structure": [
+        {
+            "key": 0,
+            "value": {
+                "X": [
+                    11,
+                    22,
+                    33
+                ],
+                "observations": [
+                    {
+                        "key": 0,
+                        "value": {
+                            "id_feat": 0,
+                            "x": [
+                                10,
+                                20
+                            ]
+                        }
+                    },
+                    {
+                        "key": 1,
+                        "value": {
+                            "id_feat": 1,
+                            "x": [
+                                30,
+                                10
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "control_points": []
+}

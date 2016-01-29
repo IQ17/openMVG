@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Maintainer|x64">
+      <Configuration>Maintainer</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A6B67A6C-BC11-49E9-B19D-E3BA9F912708}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>openMVG_main_ComputeSfM_DataColor</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openMVG_main_ComputeSfM_DataColor.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openMVG_main_ComputeSfM_DataColor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openMVG_main_ComputeSfM_DataColor.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openMVG_main_ComputeSfM_DataColor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openMVG_main_ComputeSfM_DataColor.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openMVG_main_ComputeSfM_DataColor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openMVG_main_ComputeSfM_DataColor.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openMVG_main_ComputeSfM_DataColor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Maintainer\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">openMVG_main_ComputeSfM_DataColor.dir\Maintainer\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">openMVG_main_ComputeSfM_DataColor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Windows-AMD64-Release\Debug\openMVG_image.lib;..\..\Windows-AMD64-Release\Debug\openMVG_features.lib;..\..\Windows-AMD64-Release\Debug\openMVG_sfm.lib;..\..\Windows-AMD64-Release\Debug\stlplus.lib;..\..\Windows-AMD64-Release\Debug\png.lib;..\..\Windows-AMD64-Release\Debug\jpeg.lib;..\..\Windows-AMD64-Release\Debug\tiff.lib;..\..\Windows-AMD64-Release\Debug\zlib.lib;..\..\Windows-AMD64-Release\Debug\openMVG_system.lib;..\..\Windows-AMD64-Release\Debug\openMVG_multiview.lib;..\..\Windows-AMD64-Release\Debug\openMVG_numeric.lib;..\..\Windows-AMD64-Release\Debug\lemon.lib;..\..\lib\Debug\ceres-debug.lib;..\..\Windows-AMD64-Release\Debug\cxsparse.lib;..\..\Windows-AMD64-Release\Debug\openMVG_lInftyComputerVision.lib;..\..\Windows-AMD64-Release\Debug\lib_clp.lib;..\..\Windows-AMD64-Release\Debug\lib_OsiClpSolver.lib;..\..\Windows-AMD64-Release\Debug\lib_CoinUtils.lib;..\..\Windows-AMD64-Release\Debug\lib_Osi.lib;..\..\Windows-AMD64-Release\Debug\openMVG_matching.lib;..\..\third_party\flann\lib\Debug\flann_cpp_s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Debug/openMVG_main_ComputeSfM_DataColor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Debug/openMVG_main_ComputeSfM_DataColor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Windows-AMD64-Release\Release\openMVG_image.lib;..\..\Windows-AMD64-Release\Release\openMVG_features.lib;..\..\Windows-AMD64-Release\Release\openMVG_sfm.lib;..\..\Windows-AMD64-Release\Release\stlplus.lib;..\..\Windows-AMD64-Release\Release\png.lib;..\..\Windows-AMD64-Release\Release\jpeg.lib;..\..\Windows-AMD64-Release\Release\tiff.lib;..\..\Windows-AMD64-Release\Release\zlib.lib;..\..\Windows-AMD64-Release\Release\openMVG_system.lib;..\..\Windows-AMD64-Release\Release\openMVG_multiview.lib;..\..\Windows-AMD64-Release\Release\openMVG_numeric.lib;..\..\Windows-AMD64-Release\Release\lemon.lib;..\..\lib\Release\ceres.lib;..\..\Windows-AMD64-Release\Release\cxsparse.lib;..\..\Windows-AMD64-Release\Release\openMVG_lInftyComputerVision.lib;..\..\Windows-AMD64-Release\Release\lib_clp.lib;..\..\Windows-AMD64-Release\Release\lib_OsiClpSolver.lib;..\..\Windows-AMD64-Release\Release\lib_CoinUtils.lib;..\..\Windows-AMD64-Release\Release\lib_Osi.lib;..\..\Windows-AMD64-Release\Release\openMVG_matching.lib;..\..\third_party\flann\lib\Release\flann_cpp_s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Release/openMVG_main_ComputeSfM_DataColor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Release/openMVG_main_ComputeSfM_DataColor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_image.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_features.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_sfm.lib;..\..\Windows-AMD64-Release\MinSizeRel\stlplus.lib;..\..\Windows-AMD64-Release\MinSizeRel\png.lib;..\..\Windows-AMD64-Release\MinSizeRel\jpeg.lib;..\..\Windows-AMD64-Release\MinSizeRel\tiff.lib;..\..\Windows-AMD64-Release\MinSizeRel\zlib.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_system.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_multiview.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_numeric.lib;..\..\Windows-AMD64-Release\MinSizeRel\lemon.lib;..\..\lib\MinSizeRel\ceres.lib;..\..\Windows-AMD64-Release\MinSizeRel\cxsparse.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_lInftyComputerVision.lib;..\..\Windows-AMD64-Release\MinSizeRel\lib_clp.lib;..\..\Windows-AMD64-Release\MinSizeRel\lib_OsiClpSolver.lib;..\..\Windows-AMD64-Release\MinSizeRel\lib_CoinUtils.lib;..\..\Windows-AMD64-Release\MinSizeRel\lib_Osi.lib;..\..\Windows-AMD64-Release\MinSizeRel\openMVG_matching.lib;..\..\third_party\flann\lib\MinSizeRel\flann_cpp_s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/MinSizeRel/openMVG_main_ComputeSfM_DataColor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/MinSizeRel/openMVG_main_ComputeSfM_DataColor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_image.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_features.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_sfm.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\stlplus.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\png.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\jpeg.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\tiff.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\zlib.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_system.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_multiview.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_numeric.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\lemon.lib;..\..\lib\RelWithDebInfo\ceres.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\cxsparse.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_lInftyComputerVision.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\lib_clp.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\lib_OsiClpSolver.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\lib_CoinUtils.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\lib_Osi.lib;..\..\Windows-AMD64-Release\RelWithDebInfo\openMVG_matching.lib;..\..\third_party\flann\lib\RelWithDebInfo\flann_cpp_s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/RelWithDebInfo/openMVG_main_ComputeSfM_DataColor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/RelWithDebInfo/openMVG_main_ComputeSfM_DataColor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Maintainer/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR="Maintainer";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;CMAKE_INTDIR=\"Maintainer\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src;D:\workspace_github\openMVG\src\third_party\jpeg;D:\workspace_github\openMVG\bin64\third_party\jpeg\config;D:\workspace_github\openMVG\src\third_party\png;D:\workspace_github\openMVG\src\third_party\zlib;D:\workspace_github\openMVG\bin64\third_party\png\config;D:\workspace_github\openMVG\src\third_party\tiff;D:\workspace_github\openMVG\bin64\third_party\tiff;D:\workspace_github\openMVG\src\third_party;D:\workspace_github\openMVG\src\dependencies;D:\workspace_github\openMVG\src\dependencies\cereal\include;D:\workspace_github\openMVG\src\third_party\lemon;D:\workspace_github\openMVG\bin64\third_party\lemon;D:\workspace_github\openMVG\src\third_party\ceres-solver\include;D:\workspace_github\openMVG\src\third_party\ceres-solver\internal\ceres\miniglog;D:\workspace_github\openMVG\bin64\third_party\ceres-solver\config;D:\workspace_github\openMVG\src\third_party\flann\src\cpp;D:\workspace_github\openMVG\src\dependencies\osi_clp\CoinUtils\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src;D:\workspace_github\openMVG\src\dependencies\osi_clp\Clp\src\OsiClp;D:\workspace_github\openMVG\src\dependencies\osi_clp\Osi\src\Osi;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_image.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_features.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_sfm.lib;..\..\Windows-AMD64-Release\Maintainer\stlplus.lib;..\..\Windows-AMD64-Release\Maintainer\png.lib;..\..\Windows-AMD64-Release\Maintainer\jpeg.lib;..\..\Windows-AMD64-Release\Maintainer\tiff.lib;..\..\Windows-AMD64-Release\Maintainer\zlib.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_system.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_multiview.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_numeric.lib;..\..\Windows-AMD64-Release\Maintainer\lemon.lib;..\..\lib\Maintainer\ceres.lib;..\..\Windows-AMD64-Release\Maintainer\cxsparse.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_lInftyComputerVision.lib;..\..\Windows-AMD64-Release\Maintainer\lib_clp.lib;..\..\Windows-AMD64-Release\Maintainer\lib_OsiClpSolver.lib;..\..\Windows-AMD64-Release\Maintainer\lib_CoinUtils.lib;..\..\Windows-AMD64-Release\Maintainer\lib_Osi.lib;..\..\Windows-AMD64-Release\Maintainer\openMVG_matching.lib;..\..\third_party\flann\lib\Maintainer\flann_cpp_s.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Maintainer/openMVG_main_ComputeSfM_DataColor.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/workspace_github/openMVG/bin64/Windows-AMD64-Release/Maintainer/openMVG_main_ComputeSfM_DataColor.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\tutorial_demo.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_GlobalPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_SequentialPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\tutorial_demo.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_GlobalPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_SequentialPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\tutorial_demo.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_GlobalPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_SequentialPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\tutorial_demo.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_GlobalPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_SequentialPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">Building Custom Rule D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:/workspace_github/openMVG/src/software/SfM/CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;D:\workspace_github\openMVG\src\software\SfM\tutorial_demo.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_GlobalPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\SfM_SequentialPipeline.py.in;D:\workspace_github\openMVG\src\software\SfM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:\workspace_github\openMVG\bin64\software\SfM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_github\openMVG\src\software\SfM\main_ComputeSfM_DataColor.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/ZERO_CHECK.vcxproj">
+      <Project>44816857-DDBA-48FC-8D82-3539F4841569</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/ceres-solver/internal/ceres/ceres.vcxproj">
+      <Project>321A5D78-070D-4027-9F48-7F6043DF511F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/cxsparse/cxsparse.vcxproj">
+      <Project>69E4840E-4BB2-42EF-B15E-E4A76F609E3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/flann/src/cpp/flann_cpp_s.vcxproj">
+      <Project>34322EDE-443D-43C0-B272-79F91A9CB48A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/jpeg/jpeg.vcxproj">
+      <Project>3E57E67B-913C-4B01-A60E-36525B0E8B34</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/lemon/lemon/lemon.vcxproj">
+      <Project>29E61225-8A41-4812-B77A-035CAA0C85AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/CoinUtils/src/lib_CoinUtils.vcxproj">
+      <Project>3F1276B6-FDE7-4562-A7C4-A3C1EB0B7625</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Osi/src/Osi/lib_Osi.vcxproj">
+      <Project>E4C1E0E7-41A2-440D-8F81-0E973873B8B9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Clp/src/OsiClp/lib_OsiClpSolver.vcxproj">
+      <Project>88F722BB-ABD8-480E-A0D1-837E9B650433</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/dependencies/osi_clp/Clp/src/lib_clp.vcxproj">
+      <Project>1306D7DD-1AFE-4A1D-8FCA-F588265B2108</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/features/openMVG_features.vcxproj">
+      <Project>B160A030-0203-47A2-B262-0259B3EC8C00</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/image/openMVG_image.vcxproj">
+      <Project>31DD1A08-695B-4E27-81E6-D63EC8DC5B7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/linearProgramming/lInfinityCV/openMVG_lInftyComputerVision.vcxproj">
+      <Project>99A19961-B0BA-41E8-AA56-2F7152FFF2F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/matching/openMVG_matching.vcxproj">
+      <Project>8EBE2446-43F9-44F8-9B7B-68641571D6DC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/multiview/openMVG_multiview.vcxproj">
+      <Project>061E9705-7D35-4C26-990A-44620F163384</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/numeric/openMVG_numeric.vcxproj">
+      <Project>9C96B67D-4C51-42C6-BD16-ACD33480DDAA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/sfm/openMVG_sfm.vcxproj">
+      <Project>D45431BE-3882-4B06-8718-B6C7FCE43350</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/openMVG/system/openMVG_system.vcxproj">
+      <Project>E7ECC80E-599C-4E5B-9247-8FA261C90332</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/png/png.vcxproj">
+      <Project>A49B49FE-6F3E-4DEF-8BDF-68C5ED8FCB93</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/stlplus3/stlplus.vcxproj">
+      <Project>BBB4C50E-2B36-4C0F-9487-D65EAD297DC1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/tiff/tiff.vcxproj">
+      <Project>D7829761-3E88-400F-A472-57E24EA63553</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/third_party/zlib/zlib.vcxproj">
+      <Project>66EC2C3E-C47D-4A90-B398-AC238D28C9A6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

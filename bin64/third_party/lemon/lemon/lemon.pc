@@ -1,0 +1,10 @@
+prefix=D:/workspace_github/openMVG/install
+exec_prefix=D:/workspace_github/openMVG/install/bin
+libdir=D:/workspace_github/openMVG/install/lib
+includedir=D:/workspace_github/openMVG/install/include
+
+Name: LEMON
+Description: Library for Efficient Modeling and Optimization in Networks
+Version: 
+Libs: -L${libdir} -lemon     
+Cflags: -I${includedir}

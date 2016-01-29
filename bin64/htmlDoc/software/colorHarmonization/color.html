@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>Color Harmonization &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../../index.html" />
+    <link rel="up" title="openMVG softwares &amp; tools" href="../softwares.html" />
+    <link rel="next" title="patented" href="../../nonFree/patented.html" />
+    <link rel="prev" title="Export to PMVS/CMVS" href="../MVS/PMVS.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../nonFree/patented.html" title="patented"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../MVS/PMVS.html" title="Export to PMVS/CMVS"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../softwares.html" accesskey="U">openMVG softwares &amp; tools</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="color-harmonization">
+<h1>Color Harmonization<a class="headerlink" href="#color-harmonization" title="Permalink to this headline">¶</a></h1>
+<p>In a multiple-view image acquisition process, color consistency is not ensured.
+This is an important problem for image fusion tasks: object texturing or mosaics blending for example.
+In automatic mode, the camera adapts its settings &#8211;shutter-speed and aperture&#8211; to the captured image content.
+Therefore the color of objects changes over an image sequence.</p>
+<div class="figure align-center">
+<img alt="../../_images/globalMultipleViewColorConsistency_PRB.png" src="../../_images/globalMultipleViewColorConsistency_PRB.png" />
+</div>
+<p>In order to restore the color consistency, a transformation model between reference and observed colors have to be estimated.
+It introduces two main problems:</p>
+<ul class="simple">
+<li>the data selection (common pixels between images),</li>
+<li>the estimation of a reliable color transformation between those pixels.</li>
+</ul>
+<p>This module propose an interface to solve this problem:</p>
+<p><a class="reference internal" href="../../bibliography.html#moulon13" id="id1">[Moulon13]</a> propose a global multi-view color consistency solution that in a first step selects robustly the common color information between images and in a second step estimates the color transformations that set all pictures in a common color reference, which involves a global minimization.
+It uses a compact histogram representation of the shared color information per image pairs and solve the color consistency by using a linear program with a gain and offset model for each image.</p>
+<p>A reference have to be choosen in order to set the color reference.</p>
+<p>Here the obtained results on the image sequence after having choosen a &#8220;white&#8221; or &#8220;blue&#8221; image as reference:</p>
+<div class="figure align-center">
+<img alt="../../_images/globalMultipleViewColorConsistency_solveA.png" src="../../_images/globalMultipleViewColorConsistency_solveA.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../_images/globalMultipleViewColorConsistency_solveB.png" src="../../_images/globalMultipleViewColorConsistency_solveB.png" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../MVS/PMVS.html"
+                        title="previous chapter">Export to PMVS/CMVS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../nonFree/patented.html"
+                        title="next chapter">patented</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/software/colorHarmonization/color.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../nonFree/patented.html" title="patented"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../MVS/PMVS.html" title="Export to PMVS/CMVS"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../softwares.html" >openMVG softwares &amp; tools</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>

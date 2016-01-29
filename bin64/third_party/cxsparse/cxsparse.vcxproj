@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Maintainer|x64">
+      <Configuration>Maintainer</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{69E4840E-4BB2-42EF-B15E-E4A76F609E3C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>cxsparse</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cxsparse.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cxsparse</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cxsparse.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cxsparse</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cxsparse.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cxsparse</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cxsparse.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cxsparse</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:\workspace_github\openMVG\bin64\Windows-AMD64-Release\Maintainer\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">cxsparse.dir\Maintainer\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">cxsparse</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Maintainer/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR="Maintainer";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;__SSE2__;__SSE3__;__SSSE3__;__SSE4_1__;__SSE4_2__;__AVX__;__SSE2AVX__;__AVX2__;OPENMVG_USE_SSE;OPENMVG_USE_OPENMP;EIGEN_MPL2_ONLY;NCOMPLEX;CMAKE_INTDIR=\"Maintainer\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace_github\openMVG\src\third_party\eigen;D:\workspace_github\openMVG\src\third_party\cxsparse\.;D:\workspace_github\openMVG\src\third_party\cxsparse\.\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">Building Custom Rule D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/workspace_github/openMVG/src -BD:/workspace_github/openMVG/bin64 --check-stamp-file D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:/workspace_github/openMVG/src/third_party/cxsparse/CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;D:\workspace_github\openMVG\src\third_party\cxsparse\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">D:\workspace_github\openMVG\bin64\third_party\cxsparse\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Maintainer|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_add.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_amd.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_chol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_cholsol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_compress.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_convert.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_counts.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_cumsum.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_dfs.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_dmperm.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_droptol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_dropzeros.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_dupl.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_entry.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_ereach.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_etree.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_fkeep.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_gaxpy.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_happly.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_house.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_ipvec.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_leaf.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_load.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_lsolve.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_ltsolve.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_lu.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_lusol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_malloc.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_maxtrans.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_multiply.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_norm.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_permute.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_pinv.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_post.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_print.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_pvec.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_qr.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_qrsol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_randperm.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_reach.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_scatter.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_scc.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_schol.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_spsolve.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_sqr.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_symperm.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_tdfs.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_transpose.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_updown.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_usolve.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_util.c"  />
+    <ClCompile Include="D:\workspace_github\openMVG\src\third_party\cxsparse\Source\cs_utsolve.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/workspace_github/openMVG/bin64/ZERO_CHECK.vcxproj">
+      <Project>44816857-DDBA-48FC-8D82-3539F4841569</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- SVG graphic -->
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'
+width="200px" height="200px" preserveAspectRatio="xMinYMin meet" viewBox="0 0 200 200" version="1.1">
+<circle cx="100" cy="126.833" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="103.595" cy="133.059" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="123.238" cy="140.249" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="153.666" cy="126.833" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="169.714" cy="86.5836" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="150.071" cy="40.1078" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="100" cy="19.5016" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="49.9293" cy="40.1078" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="30.2863" cy="86.5836" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="46.3344" cy="126.833" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="76.7621" cy="140.249" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+<circle cx="96.4051" cy="133.059" r="3" stroke="black" stroke-width="0.2" fill="red"/>
+</svg>

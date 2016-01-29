@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>OSI CLP &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../index.html" />
+    <link rel="up" title="dependencies" href="external_libs.html" />
+    <link rel="next" title="third_party" href="../third_party/third_party.html" />
+    <link rel="prev" title="OPENEXIF" href="openExif.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../third_party/third_party.html" title="third_party"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="openExif.html" title="OPENEXIF"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="external_libs.html" accesskey="U">dependencies</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="osi-clp">
+<h1>OSI CLP<a class="headerlink" href="#osi-clp" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="usage">
+<h2>USAGE<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>openMVG uses the <a class="reference internal" href="#osi" id="id1">[OSI]</a> and the <a class="reference internal" href="#clp" id="id2">[CLP]</a> solver in order to solve linear programs <a class="reference internal" href="../bibliography.html#lp" id="id3">[LP]</a>.</p>
+<p>CLP has been choosen because it is known to support problems of up to 1.5 million constraints [CLP FAQ]_.</p>
+<p><a class="reference internal" href="#lpsolve" id="id4">[LPSOLVE]</a> has been tested but tests shown that it is less reliable (sometimes, there is no convergence to a solution).</p>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="#osi" id="id5">[OSI]</a></dt>
+<dd>Osi (Open Solver Interface) provides an abstract base class to a generic linear programming (LP) solver, along with derived classes for specific solvers. Many applications may be able to use the Osi to insulate themselves from a specific LP solver. (CLP and MOSEK backend are supported in openMVG).</dd>
+<dt><a class="reference internal" href="#clp" id="id6">[CLP]</a></dt>
+<dd>Clp (Coin-or linear programming) is an open-source linear programming solver written in C++.</dd>
+</dl>
+<table class="docutils citation" frame="void" id="osi" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[OSI]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> <a class="reference external" href="https://projects.coin-or.org/Osi">https://projects.coin-or.org/Osi</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="clp" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[CLP]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id6">2</a>)</em> <a class="reference external" href="https://projects.coin-or.org/Clp/wiki">https://projects.coin-or.org/Clp/wiki</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="clp-faq" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[CLP_FAQ]</td><td><a class="reference external" href="https://projects.coin-or.org/Clp/wiki/FAQ">https://projects.coin-or.org/Clp/wiki/FAQ</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="lpsolve" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[LPSOLVE]</a></td><td><a class="reference external" href="http://lpsolve.sourceforge.net/5.5/">http://lpsolve.sourceforge.net/5.5/</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="openExif.html"
+                        title="previous chapter">OPENEXIF</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../third_party/third_party.html"
+                        title="next chapter">third_party</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/dependencies/osi_clp.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../third_party/third_party.html" title="third_party"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="openExif.html" title="OPENEXIF"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="external_libs.html" >dependencies</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>

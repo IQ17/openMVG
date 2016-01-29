@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>Ground Control Points registration &mdash; openMVG library</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../../../../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../../../../../_static/searchtools.js"></script>
+    <link rel="top" title="openMVG library" href="../../../../index.html" />
+    <link rel="up" title="openMVG softwares &amp; tools" href="../../../softwares.html" />
+    <link rel="next" title="Localization" href="../../../localization/localization.html" />
+    <link rel="prev" title="Export to PMVS/CMVS" href="../../../MVS/PMVS.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../localization/localization.html" title="Localization"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../../../MVS/PMVS.html" title="Export to PMVS/CMVS"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../softwares.html" accesskey="U">openMVG softwares &amp; tools</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ground-control-points-registration">
+<h1>Ground Control Points registration<a class="headerlink" href="#ground-control-points-registration" title="Permalink to this headline">¶</a></h1>
+<p>Structure from Motion find camera poses &amp; a structure to an unknown scale of the real metric measure. In order to restore the correct scale and orientation to known 3D coordinates, OpenMVG provide a GUI to perform Ground Control Point registration.</p>
+<ul class="simple">
+<li>Given some 3D known ground control points and their 2D observations in some images, we can compute the rigid transformation to move the SfM scene to the known 3D coordinates. The rigid transformation (7Dof) is computed in least square between the triangulation of the observations and the known 3D positions).</li>
+<li>For your ground control points your can use specific pattern or object for which you known the measures (post-it, ruller, calibration target...).</li>
+</ul>
+<div class="figure align-center" id="id1">
+<img alt="../../../../_images/gcp_principle.png" src="../../../../_images/gcp_principle.png" />
+<p class="caption"><span class="caption-text">Figure : Ground Control Point registration principle illustration.</span></p>
+</div>
+<div class="section" id="short-tutorial">
+<h2>Short tutorial<a class="headerlink" href="#short-tutorial" title="Permalink to this headline">¶</a></h2>
+<p>In this sample we scale the scene from the known dimensions of a paper target (see the post-it on the images below).</p>
+<blockquote>
+<div><ul>
+<li><ol class="first arabic simple">
+<li>Open your scene in the GUI</li>
+</ol>
+<ul class="simple">
+<li>File/Open Project (CTRL+O) and open an sfm_data file.</li>
+<li>double click on an image on the list to display it on the right</li>
+<li>zoom level can be changed with CTRL+WHEEL</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_gui.jpg" src="../../../../_images/gcp_gui.jpg" />
+</div>
+<ul>
+<li><ol class="first arabic simple" start="2">
+<li>Set your GCP observations positions whithin the images</li>
+</ol>
+<ul class="simple">
+<li>choose your image,</li>
+<li>click inside it (at the right position or not, you can move it later) &amp; select your GCP unique ID,</li>
+<li>then the Control point observation appears</li>
+<li>to move your GCP click to it, and keep left mouse button clicked while moving it.</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_edit_observation_positions.jpg" src="../../../../_images/gcp_edit_observation_positions.jpg" />
+</div>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_edit_observation_positions_3pts.jpg" src="../../../../_images/gcp_edit_observation_positions_3pts.jpg" />
+</div>
+<ul>
+<li><ol class="first arabic simple" start="3">
+<li>Provide the 3D GCP known X,Y,Z positions</li>
+</ol>
+<ul class="simple">
+<li>File/Control Point Edition (CTRL+E)</li>
+<li>double click in the X,Y,Z cells and edit the 3D coordinates</li>
+<li>close the window to save them</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_edit_3Dposition.jpg" src="../../../../_images/gcp_edit_3Dposition.jpg" />
+</div>
+<ul>
+<li><ol class="first arabic simple" start="4">
+<li>Perform the registration</li>
+</ol>
+<ul class="simple">
+<li>File/Control Point Registration (CTRL+R)</li>
+<li>If at least 3D control points exist and iff their observations are triangulable, the registration will be performed and a report appears.</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_registration.jpg" src="../../../../_images/gcp_registration.jpg" />
+</div>
+<ul>
+<li><ol class="first arabic simple" start="5">
+<li>Save your scene</li>
+</ol>
+<ul class="simple">
+<li>File/Save Project (CTRL+S) and save your sfm_data file.</li>
+<li>Post-process or use directly the point cloud to perform measures.</li>
+<li>i.e here once MVS have been computed we can measure the eyes distance =&gt; ~= 5 cm</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../../../_images/gcp_measure_on_the_model.jpg" src="../../../../_images/gcp_measure_on_the_model.jpg" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="../../../../index.html">OpenMVG library</a></h3>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../../../MVS/PMVS.html"
+                        title="previous chapter">Export to PMVS/CMVS</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../../localization/localization.html"
+                        title="next chapter">Localization</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/software/ui/SfM/control_points_registration/GCP.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../localization/localization.html" title="Localization"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../../../MVS/PMVS.html" title="Export to PMVS/CMVS"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">openMVG library</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../../../softwares.html" >openMVG softwares &amp; tools</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013-2015, OpenMVG authors.
+</div>
+
+
+
+
+
+  </body>
+</html>
